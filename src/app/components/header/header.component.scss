@@ -1,0 +1,43 @@
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+   
+    ul {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: row;
+        width: 25rem;
+
+        li {
+            list-style: none;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            a {
+                text-decoration: none;
+                color: black;
+            }
+
+            #logo {
+                font-family: 'DM Serif Display', serif;
+                font-size: 4rem;
+            }
+        }   
+        
+        .imgs {
+            width: 1.5rem;
+            height: 1.5rem;
+        }
+
+        li:hover > a, li:hover > svg {
+            color: rgb(41, 41, 41);
+            fill:rgb(41, 41, 41);
+        }
+    }
+}

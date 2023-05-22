@@ -3,10 +3,26 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { HomeComponent } from './components/pages/home/home.component';
+import { LoginComponent } from './components/pages/login/login.component';
+import { CadastroComponent } from './components/pages/cadastro/cadastro.component';
+import { HeaderComponent } from './components/header/header.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { PesquisarComponent } from './components/pages/pesquisar/pesquisar.component';
+import { MenuComponent } from './components/menu/menu.component';
+import { CarrinhoComponent } from './components/carrinho/carrinho.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HomeComponent,
+    LoginComponent,
+    CadastroComponent,
+    HeaderComponent,
+    FooterComponent,
+    PesquisarComponent,
+    MenuComponent,
+    CarrinhoComponent,
   ],
   imports: [
     BrowserModule,
