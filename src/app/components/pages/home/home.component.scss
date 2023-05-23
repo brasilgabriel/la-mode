@@ -7,7 +7,8 @@
     div h2 {
         text-align: center;
         font-size: 4rem;
-        font-weight: 300
+        font-weight: 300;
+        white-space: nowrap;
     }
 }
 
@@ -25,8 +26,6 @@
         width: 100%;
         height: 100vh;
         scroll-snap-align: start;
-
-        
     }
 
     div:nth-of-type(1) {
@@ -52,4 +51,52 @@
 
 #imagens::-webkit-scrollbar-thumb {
     background-color: transparent;
+}
+
+@media only screen and (max-device-width: 1000px) {
+    #imagens div {
+        background-position: center;
+    }
+}
+
+@media only screen and (max-device-width: 850px) {
+    #titulo div h2 {
+        font-size: 3.5rem;
+    }
+}
+
+@media only screen and (max-device-width: 750px) {
+    #titulo div h2 {
+        font-size: 3.2rem;
+    }
+}
+
+@media only screen and (max-device-width: 680px) {
+    #titulo div h2 {
+        font-size: 2.8rem;
+    }
+}
+
+@media only screen and (max-device-width: 580px) {
+    #titulo div h2 {
+        font-size: 2.5rem;
+    }
+}
+
+@media only screen and (max-device-width: 520px) {
+    #titulo div h2 {
+        font-size: 2.2rem;
+    }
+}
+
+@media only screen and (max-device-width: 460px) {
+    #titulo div h2 {
+        font-size: 2rem;
+    }
+}
+
+@media only screen and (max-device-width: 400px) {
+    #titulo div h2 {
+        font-size: 1.8rem;
+    }
 }
