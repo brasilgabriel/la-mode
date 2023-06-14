@@ -1,1 +1,22 @@
-<p>cadastro works!</p>
+<section>
+    <form (ngSubmit)="post()">
+        <div id="titulo">
+            <h2>CRIE A SUA CONTA</h2>
+        </div>
+    
+        <div id="interacao">
+            <input [(ngModel)]="usuario.nome" type="text" name="nome" placeholder="NOME">
+            <input [(ngModel)]="usuario.celular" type="text" name="celular" placeholder="NÚMERO DO CELULAR">
+            <input [(ngModel)]="usuario.email" type="email" name="email" placeholder="EMAIL">
+            <input [(ngModel)]="usuario.senha" type="password" name="senha" placeholder="SENHA">
+
+            <button type="submit">CADASTRAR</button>
+        </div>
+        
+        <div id="cadastro">
+            <p>
+                <a routerLink="/login">Já é cadastrado?</a>
+            </p>
+        </div>
+    </form>
+</section>

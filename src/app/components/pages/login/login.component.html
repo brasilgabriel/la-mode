@@ -1,14 +1,14 @@
 <section>
-    <form>
+    <form (ngSubmit)="get()">
         <div id="titulo">
             <h2>ACESSE A SUA CONTA</h2>
         </div>
     
         <div id="interacao">
-            <input type="email" name="email" placeholder="EMAIL">
-            <input type="password" name="senha" placeholder="SENHA">
+            <input [(ngModel)]="usuarioLogin.email" type="email" name="email" placeholder="EMAIL">
+            <input [(ngModel)]="usuarioLogin.senha" type="password" name="senha" placeholder="SENHA">
 
-            <button>INICIAR SESSÃO</button>
+            <button type="submit">INICIAR SESSÃO</button>
         </div>
         
         <div id="cadastro">
